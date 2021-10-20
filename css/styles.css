@@ -145,13 +145,21 @@ p {
 
 .contact__svg {
   margin-right: 10px;
-  width: 16px;
-  height: 12px;
   fill: var(--social-network-rest, gray);
 }
 
-.contact__svg:hover,
-.contact__svg:focus {
+.contact__svg.envelope__icon {
+  width: 16px;
+  height: 12px;
+}
+
+.contact__svg.smartphone__icon {
+  width: 10px;
+  height: 16px;
+}
+
+.contact:hover .contact__svg,
+.contact:focus .contact__svg {
   fill: var(--active-linc-color, lightblue);
 }
 
@@ -402,7 +410,6 @@ p {
   display: flex;
   padding: 16px 32px 30px 32px;
 }
-/* вряд ли это так работает */
 
 .network__into:not(:last-child) {
   margin-right: 10px;
@@ -429,8 +436,8 @@ p {
   fill: var(--social-network-rest, gray);
 }
 
-.network__svg:hover,
-.network__svg:focus {
+.network__link:hover .network__svg,
+.network__link:focus .network__svg {
   fill: var(--header-white, white);
 }
 
@@ -457,18 +464,26 @@ p {
   height: 92px;
 }
 
+.client__brand:hover,
+.client__brand:focus {
+  border: 1px solid var(--active-linc-color, teal);
+}
+
 .client__svg {
   width: 106px;
   height: 60px;
+  fill: var(--social-network-rest, gray);
+}
+
+.client__brand:hover .client__svg,
+.client__brand:focus .client__svg {
+  fill: var(--active-linc-color, teal);
 }
 
 /* Footer__Network */
 
 .feedback {
   margin-right: 70px;
-}
-
-.footer__network {
 }
 
 .features__title.bottom {
@@ -541,6 +556,8 @@ p {
 .filter__button:focus {
   color: var(--header-white, white);
   background-color: var(--active-linc-color, lightblue);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio__items {

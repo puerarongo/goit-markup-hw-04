@@ -37,13 +37,23 @@
         </nav>
 
         <ul class="contacts">
-          <li>
-            <a class="contact" href="mailto:info@devstudio.com"
+          <li class="contacts__item">
+            <a class="contact" href="mailto:info@devstudio.com">
+              <svg class="contact__svg envelope__icon">
+                <use
+                  href="./images/svg_directory/svg_sprite.svg#icon-envelope_vector"
+                ></use></svg
               >info@devstudio.com</a
             >
           </li>
-          <li>
-            <a class="contact" href="tel:+380961111111">+38 096 111 11 11</a>
+          <li class="contacts__item">
+            <a class="contact" href="tel:+380961111111"
+              ><svg class="contact__svg smartphone__icon">
+                <use
+                  href="./images/svg_directory/svg_sprite.svg#icon-smartphone_vector"
+                ></use></svg
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -230,23 +240,72 @@
     <!-- P__FOOTER -->
 
     <footer class="footer">
-      <div class="container">
-        <a class="logo" href="#">Web<span class="logo__footer">Studio</span></a>
+      <div class="container bottom">
+        <!-- Feedback -->
+        <div class="feedback">
+          <a class="logo" href="#"
+            >Web<span class="logo__footer">Studio</span></a
+          >
 
-        <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
+          <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
 
-        <ul class="contacts__footer">
-          <li>
-            <a class="contact__footer" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="contact__footer" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+          <ul class="contacts__footer">
+            <li>
+              <a class="contact__footer" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="contact__footer" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- /Feedback -->
+
+        <!-- Footer__Network -->
+        <div class="footer__network">
+          <h3 class="features__title bottom">присоединяйтесь</h3>
+          <ul class="network__links bottom">
+            <li class="network__into">
+              <a class="network__link">
+                <svg class="network__svg bottom">
+                  <use
+                    href="./images/svg_directory/svg_sprite.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="network__into">
+              <a class="network__link">
+                <svg class="network__svg bottom">
+                  <use
+                    href="./images/svg_directory/svg_sprite.svg#icon-twitter"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="network__into">
+              <a class="network__link">
+                <svg class="network__svg bottom">
+                  <use
+                    href="./images/svg_directory/svg_sprite.svg#icon-facebook"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="network__into">
+              <a class="network__link">
+                <svg class="network__svg bottom">
+                  <use
+                    href="./images/svg_directory/svg_sprite.svg#icon-linkedin"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
       <!-- /container-->
     </footer>
